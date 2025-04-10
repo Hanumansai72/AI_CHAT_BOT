@@ -1,0 +1,104 @@
+:root {
+    --button-bg: black;
+    --bg-color: white;
+    --text-color: black;
+}
+
+body {
+    background-color: var(--bg-color);
+    transition: background-color 0.2s ease-in-out;
+    overflow: scroll; /* Prevents unwanted scrolling */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    color: var(--text-color);
+    margin-right:82%;
+}
+
+.navbar-brand:hover {
+    color: var(--button-bg);
+}
+
+.bi-robot {
+    font-size: 27px;
+    color: var(--text-color);
+}
+
+.light {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    color: var(--text-color);
+}
+
+/* Scrollable chat area */
+.chat-container {
+    flex: 1;
+    overflow-y: auto; /* Enables scrolling */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* User Message */
+.user-message {
+    align-self: flex-end;
+    background-color: var(--button-bg);
+    color: var(--bg-color);
+    border-radius: 20px;
+    padding: 10px 15px;
+    max-width: 70%;
+    word-wrap: break-word;
+    margin: 5px;
+}
+
+/* Bot Message */
+.bot-message {
+    align-self: flex-start;
+    background-color: #e0e0e0;
+    color: black;
+    border-radius: 20px;
+    padding: 10px 15px;
+    max-width: 70%;
+    word-wrap: break-word;
+    margin: 5px;
+}
+
+/* Fixed input bar */
+.input-group {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    display: flex;
+    background: white;
+    border: 2px solid var(--button-bg);
+    border-radius: 18px;
+    padding: 10px;
+    align-items: center;
+}
+
+.input-group input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.bi-send {
+    cursor: pointer;
+    font-size: 22px;
+    color: var(--button-bg);
+    margin-left: 10px;
+}
