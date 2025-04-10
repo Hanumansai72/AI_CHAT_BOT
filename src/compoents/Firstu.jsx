@@ -72,6 +72,8 @@ function Firstu() {
 
             {/* Fixed input at bottom */}
             <div className="input-group">
+            <i class="bi bi-mic-fill"></i>
+
                 <input
                     type="text"
                     className="form"
